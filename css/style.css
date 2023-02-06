@@ -1,8 +1,11 @@
+/*regole generali*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
 
+  /*root con i colori da utilizzare*/  
 }
 :root {
     --white: #ffffff;
@@ -12,13 +15,17 @@
     --bg-nav: #255EE9;
 
 }
+/*inserimento bordi per avere un layout di tutti gli elementi*/
 .bordi {
     border: 1px solid black;
 }
 
+/*inserimento colore di sfondo della nav*/
 nav {
     background-color: var(--bg-nav);
 }
+
+/*flex della nav*/
 .container {
    display: flex;
    flex-flow: row wrap;
@@ -26,9 +33,12 @@ nav {
    padding: 15px;
 }
 
+/*modifica posizionamento lista nella nav*/
 .container-lista1 {
     width: 25%;
 }
+
+/*flex della lista contenuta nella nav*/
 .lista1 {
     display: flex;
     flex-flow: row wrap;
@@ -37,19 +47,43 @@ nav {
 
 } 
   
-
+/* annullamento decoration + colore testo bianco per alcuni bottoni*/
 .white{
     text-decoration: none;
     color: var(--white);
 }
 
+/* annullamento decoration + colore testo azzurro  per alcuni bottoni*/
 .blue {
     text-decoration: none;
     color: var(--bg-nav);
 
 }
 
-.container-bottoni {
+/* annullamento decoration + colore testo nero  per il secondo bottone dell'header*/
+.black {
+    text-decoration: none;
+    color: var(--bg-footer);
+
+}
+
+/* colore sfondo e creazione bottone 1 dell'header*/
+.bottone1 {
+    background-color: var(--white);
+    border-radius: 20%;
+    padding: 15px 15px;
+}
+
+/* colore sfondo e creazione bottone 2 dell'header*/
+.bottone2 {
+    background-color: var(--bg-bottone2-header);
+    border-radius: 20%;
+    padding: 15px 30px;
+
+}
+
+/*creazione bottone nav + sfondo bianco*/
+.container-bottone {
     background: var(--white);
     border-radius: 40%;
 
@@ -58,33 +92,73 @@ nav {
     padding-top: 7px;
 }
 
+/* modifica posizionamento titolo*/
+ .titolo {
+    padding-bottom: 60px;
+ }
 
+
+/* flex dei bottoni contenuti nell'header*/
+.container-bottoni {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 20px 500px;
+    
+}
+
+
+/* ridimensionamento paragrafo*/
+.paragrafo {
+    padding-left: 27%;
+    padding-right: 27%;
+}
+
+
+
+/* flex , posizionamento e immagine di sfondo dell'Header*/
 .container2 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
     text-align: center;
+    padding-top: 35px;
+    background-image: url(../img/jumbo.png);
+    height: 530px;
+     color: var(--white);
+    background-size: cover;
+}
 
-}.section-row {
+/* flex row della prima sezione del main*/
+.section-row {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
+/* flex reverse della seconda sezione del main*/
 .section-reverse {
     display: flex;
     flex-flow: row-reverse wrap;
     justify-content: space-between;
 }
+
+/*modifica posizionamento immagini delle prime 3 sezioni sezioni*/
  .immagine{
     width: 40%;
 }
 
+/* modifica posizionamento del testo delle prime 3 sezioni*/
 .testo{
     width: 60%;
 }
 
+/* testo della sezione 4 messo al centro*/
 .section {
     text-align: center;
 }
 
+/*flex della lista nel footer*/
 .lista2 {
     display: flex;
     flex-flow: row wrap;

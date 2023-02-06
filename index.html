@@ -5,16 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Discord</title>
 </head>
 
 <body>
     <header>
-        <nav class="container bordi">
+        <!--creazione nav piu links-->
+        <nav class="container">
+            <!--Container logo + inserimento logo-->
             <div>
                 <img src="./img/logo.svg" alt="logo">
             </div>
+            <!--fine container logo-->
+            <!--container lista + inserimenti ul-->
             <div class="container-lista1">
                 <ul class="lista1" >
                     <li>
@@ -37,39 +43,65 @@
 
                     </li>
                 </ul>
+                <!--fine ul-->
+                <!--contenitore bottone accedi + creazione bottone del link accedi-->
             </div>
-            <div class="container-bottoni">
+            <div class="container-bottone">
                 <a class="blue" href="">accedi</a>
             </div>
         </nav>
-        <div class="container2 bordi">
-            <h1>titolo</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, nihil.</p>
-            <a href="">bottone1</a><a href="">bottone2</a>
-        </div>
+        <!--container titolo documento + inserimento h1 per il titolo-->
+        <div class="container2">
+            <div class="titolo">
+            <h1>Il tuo posto per parlare</h1>
+            </div>
+            <!--fine container titolo-->
+            <!--container paragrafo + inserimento paragarfo-->
+            <div class="paragrafo">
+             <p>Che tu faccia parte di un club scolastico, un gruppo di gamer, communità artistica mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende piu facile chiacchierare ogni giorno e ritrovarsi piu spesso.</p>
+            </div>
+            <!--container bottoni + inserimento bottoni scarica e apri discord -->
+            <div class="container-bottoni">
+                <div class="bottone1"> 
+                <a class="black" href=""><i class="fa-solid fa-arrow-down"></i>Scarica per Mac</a>
+                </div>
+                <div class="bottone2">
+                    <a class="white " href="">Apri Discord nel tuo browser</a>
+                </div>
+            </div>
+            <!--fine container paragrafo-->
+         </div>
     </header>
+    <!--creazione scheletro sito-->
     <main>
+        <!--contenitore delle sezioni-->
         <div class="bordi">
+            <!--sezione 1 con immagine piu testo-->
             <section class="section-row bordi">
                 <div class="immagine bordi">immagine</div>
                 <h2 class="testo bordi">testo</h2>
             </section>
+            <!--sezione 2 con immagine piu testo reverse-->
             <section class="section-reverse bordi">
                 <div class="immagine bordi">immagine</div>
                 <h2 class="testo bordi">testo</h2>
             </section>
+            <!--sezione 3 con immagine piu testo-->
             <section class="section-row bordi">
                 <div class="immagine bordi">immagine</div>
                 <h2 class="testo bordi">testo</h2>
             </section>
+            <!--sezione 4 con immagine piu testo-->
             <section class="section bordi">
                 <h2 class="bordi">testo</h2>
                 <div>immagine</div>
             </section>
         </div>
+        <!--fine contenitore delle sezioni-->
 
     </main>
     <footer>
+        <!--creazione e inserimento lista con gli ultimi link nel footer-->
         <ul class="lista2 bordi">
             <li class="bordi">1</li>
             <li class="bordi">2</li>
@@ -77,12 +109,14 @@
             <li class="bordi">4</li>
             <li class="bordi">5</li>
         </ul>
-        <div class="container bordi">
+        <!--fine lista-->
+        <div class="section-row bordi">
             <div class="bordi">logo</div>
             <a class="bordi" href="">bottone</a>
         </div>
 
     </footer>
+    <!--fine scheletro -->
 
 </body>
 
