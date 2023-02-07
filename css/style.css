@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
+    
 
   /*root con i colori da utilizzare*/  
 }
@@ -20,22 +21,27 @@
     border: 1px solid black;
 }
 
+
+
 /*inserimento colore di sfondo della nav*/
-nav {
+.brg1 {
     background-color: var(--bg-nav);
 }
 
 /*flex della nav*/
 .container {
+    max-width: 1200px;
+    margin: 0 auto;
    display: flex;
    flex-flow: row wrap;
-   justify-content: space-around;
+   justify-content: space-between;
    padding: 15px;
+   
 }
 
 /*modifica posizionamento lista nella nav*/
 .container-lista1 {
-    width: 25%;
+    width: 40%;
 }
 
 /*flex della lista contenuta nella nav*/
@@ -44,8 +50,16 @@ nav {
     flex-flow: row wrap;
     justify-content: space-between;
     list-style: none; 
-
+    
+    
 } 
+/*creazione bottone nav + sfondo bianco*/
+.container-bottone {
+    background: var(--white);
+    border-radius: 50px 50px;
+    padding: 10px;
+    text-align: center;    
+}
   
 /* annullamento decoration + colore testo bianco per alcuni bottoni*/
 .white{
@@ -67,66 +81,87 @@ nav {
 
 }
 
+.grey {
+    background-color: var(--bg-grey);
+}
+
+
+.bgr2 {
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+    
+    
+
+    
+.container-bottoni {
+   padding: 50px;
+}
+
 /* colore sfondo e creazione bottone 1 dell'header*/
 .bottone1 {
     background-color: var(--white);
-    border-radius: 20%;
-    padding: 15px 15px;
+    border-radius: 50px 50px;
+    padding: 5px 20px;
 }
+    
 
 /* colore sfondo e creazione bottone 2 dell'header*/
 .bottone2 {
     background-color: var(--bg-bottone2-header);
-    border-radius: 20%;
-    padding: 15px 30px;
+    border-radius: 50px 50px;
+    padding: 8px 20px;
+    margin-left: 30px;
 
 }
 
-/*creazione bottone nav + sfondo bianco*/
-.container-bottone {
-    background: var(--white);
-    border-radius: 40%;
 
-    width: 5%;
-    text-align: center;
-    padding-top: 7px;
-}
 
 /* modifica posizionamento titolo*/
  .titolo {
-    padding-bottom: 60px;
- }
+   padding: 5%;
+   margin-top: 2rem;
+ } 
 
 
-/* flex dei bottoni contenuti nell'header*/
-.container-bottoni {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    padding: 20px 500px;
-    
-}
 
 
 /* ridimensionamento paragrafo*/
 .paragrafo {
-    padding-left: 27%;
-    padding-right: 27%;
+    padding-left: 20%;
+    padding-right: 20%;
+} 
+
+
+
+.brg {
+    background-image: url(../img/jumbo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    ;
 }
-
-
 
 /* flex , posizionamento e immagine di sfondo dell'Header*/
 .container2 {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
     padding-top: 35px;
-    background-image: url(../img/jumbo.png);
-    height: 530px;
+    height: 540px;
      color: var(--white);
-    background-size: cover;
+     
+}
+
+.container-sezioni {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center
+    
+
 }
 
 /* flex row della prima sezione del main*/
@@ -134,6 +169,7 @@ nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    margin-top: 100px;
 }
 
 /* flex reverse della seconda sezione del main*/
@@ -141,22 +177,84 @@ nav {
     display: flex;
     flex-flow: row-reverse wrap;
     justify-content: space-between;
+    margin-top: 80px;
 }
+.h-sec  {
+    padding-top: 20%;
+    padding-right: 30%;
+    font-size: 240%;
+    text-align: start;
+ }
+
+ .p-section {
+    padding-top: 5%;
+    padding-right: 28%;
+    text-align: start;
+ }
+
 
 /*modifica posizionamento immagini delle prime 3 sezioni sezioni*/
- .immagine{
-    width: 40%;
+ .immagine {
+    width: 60%;
+    padding-top: 70px;
 }
 
 /* modifica posizionamento del testo delle prime 3 sezioni*/
-.testo{
-    width: 60%;
+.testo {
+    width: 40%;
+    
 }
 
-/* testo della sezione 4 messo al centro*/
-.section {
-    text-align: center;
+.container3 {
+     max-width: 1200px;
+     margin: 0 auto;
+     margin-top: 120px;
+     margin-bottom: 150px;
+    
 }
+.section4 {
+   text-align: center;
+   padding: 50px 50px 0 50px;
+}
+
+.h-sec4 {
+    font-size: 45px;
+}
+
+.p-sec4 {
+   padding-top: 30px;
+   padding-right: 130px;
+   padding-left: 130px;
+}
+
+.img-sec4 {
+    padding-top: 10px;
+    width: 100%;
+}
+
+#ready {
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 35%;
+    margin-bottom: 30px;
+    
+    
+    
+}
+
+#btn-mac {
+    
+    border-radius: 50px 50px;
+    padding: 10px 40px;
+    background-color: #255EE9;
+    color: #ffffff;
+    margin-top: 10px;
+    text-decoration: none;
+
+    
+}
+
 
 /*flex della lista nel footer*/
 .lista2 {
@@ -164,4 +262,5 @@ nav {
     flex-flow: row wrap;
     justify-content: space-between;
     list-style: none;
+    margin-top: 50px;
 }
